@@ -1,6 +1,6 @@
 <div align="center">
     <h1>Schiscia</h1>
-    <b>🍱 A Clean and Simple Startpage</b>
+    <b>A Simple and Minimal Startpage</b>
 </div>
 
 <p align="center">
@@ -123,10 +123,14 @@ You can put your name and change the greetings.
 
 ```js
 var name = 'John Doe';
-var lateTxt = 'Go to Sleep! ';
-var morningTxt = 'Good morning! ';
+var lateTxt = 'Go to Sleep ';
+var morningTxt = 'Good morning ';
 var afterTxt = 'Good afternoon ';
 var evenTxt = 'Good evening ';
 ```
 
 It'll change in order of the hour.
+
+### Mentions
+
+House Logo: <a href="https://www.vecteezy.com/free-vector/home-icon">Home Icon Vectors by Vecteezy</a>
