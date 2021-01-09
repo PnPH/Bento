@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>Bento</h1>
+    <h1>Schiscia</h1>
     <b>🍱 A Clean and Simple Startpage</b>
 </div>
 
@@ -9,7 +9,7 @@
 
 ## Index
 
--   [Bento](#)
+-   [Schiscia](#)
     -   [Features](#features)
     -   [Usage](#usage)
         -   [Home Page](#as-home-page)
@@ -20,8 +20,6 @@
         -   [Theme Depending at the time](#theme-depending-at-the-time)
         -   [Image Background](#image-background)
         -   [Greetings](#greetings)
-        -   [Weather Info](#weather-info)
-        -   [Weather Icons](#weather-icons)
 
 ### Features:
 
@@ -132,55 +130,3 @@ var evenTxt = 'Good evening ';
 ```
 
 It'll change in order of the hour.
-
-### Weather Info
-
-For setting up the Weather widget you're going to need an API Key in: `https://openweathermap.org/`. Once you have your Key you'll need to set yourlatitude and longitude, you can use: `https://www.latlong.net/` to get them. Once you have the data, you'll need to set them in the `weather.js` in the **js** folder. The code is
-
-> If you don't like to have your API Key public, you can make the repo into a private one. You can still use the Github Pages service.
-
-### Weather Icons
-
-<p align="center">
-  <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/previewico.png">
-</p>
-
-The icons by themselves have now 4 different color schemes:
-
--   **Nord** Using the Nord Color Scheme and easy-to-eyes colors
--   **OneDark** (Default one) Using the One Dark Pro color scheme
--   **Dark** For White theme only users that want a minimalist look
--   **White** For Dark theme only users that want a minimalist look
-
-You set the icon theme changing this two lines of code in the `index.html` and `weather.js` files:
-
--   If you want the Dark icon theme, change the `OneDark` to `Dark`
--   If you want the White icon theme, change the `OneDark` to `White`
--   If you want the Nord icon theme, change the `OneDark` to `Nord`
-
-For example if I'd like to use the `Dark` icon theme:
-
-```html
-<div class="weather-icon">
-    <img src="icons/OneDark/unknown.png" />
-</div>
-<!-- Change it to: -->
-<div class="weather-icon">
-    <img src="icons/Dark/unknown.png" />
-</div>
-```
-
-```js
-function displayWeather() {
-    iconElement.innerHTML = `<img src="icons/OneDark/${weather.iconId}.png"/>`;
-    tempElement.innerHTML = `${weather.temperature.value}°<span class="darkfg">${tempUnit}</span>`;
-    descElement.innerHTML = weather.description;
-}
-
-//Change it to:
-function displayWeather() {
-    iconElement.innerHTML = `<img src="icons/Dark/${weather.iconId}.png"/>`;
-    tempElement.innerHTML = `${weather.temperature.value}°<span class="darkfg">${tempUnit}</span>`;
-    descElement.innerHTML = weather.description;
-}
-```
