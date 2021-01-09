@@ -3,15 +3,15 @@ const today = new Date();
 const hour = today.getHours();
 
 // Here you can change your name
-const name = 'Matteo';
+const name = 'John Doe';
 
 // Here you can change your greetings
 const gree1 = 'Go to Sleep! ';
-const gree2 = 'Buongiorno ';
+const gree2 = 'Good Morning ';
 const gree3 = 'Good afternoon ';
-const gree4 = 'Buonasera ';
-const gree5 = 'Buonasera ';
-const gree6 = 'Buonasera ';
+const gree4 = 'Good Night ';
+const gree5 = 'Good Night ';
+const gree6 = 'Good Night ';
 
 // Define the hours of the greetings
 if (hour >= 23 && hour < 5) {
